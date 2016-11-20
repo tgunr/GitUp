@@ -70,7 +70,7 @@
 		E21753D51B9169DD00BE234A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = SOURCE_ROOT; };
 		E21753D91B9169EE00BE234A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
 		E21753DB1B9169EE00BE234A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		E21753DE1B9169F900BE234A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
+		E21753DE1B9169F900BE234A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../../Volumes/hd3/Sources/Projects/iOS/Intro_iOS_OpenCV/Intro_iOS_OpenCV/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		E21753E21B916ACB00BE234A /* GitUpKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GitUpKit.xcodeproj; path = ../../GitUpKit/GitUpKit.xcodeproj; sourceTree = "<group>"; };
 		E2B987831B916F620097629D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		E2B987841B916F620097629D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
@@ -155,6 +155,7 @@
 				TargetAttributes = {
 					E21753A41B9168D300BE234A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 98LGF33H43;
 					};
 				};
 			};
@@ -338,6 +339,7 @@
 		E21753C91B9168D300BE234A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.gitup.i;
@@ -348,6 +350,7 @@
 		E21753CA1B9168D300BE234A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.gitup.i;

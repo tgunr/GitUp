@@ -12,6 +12,8 @@
 		749786941B85AAB10065BD55 /* GCOrderedSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EDB5D11B84D4C400F00E79 /* GCOrderedSet.m */; };
 		74EDB5D61B84E06500F00E79 /* GCOrderedSet-Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EDB5D51B84E06500F00E79 /* GCOrderedSet-Tests.m */; };
 		74EDB5D71B8517F500F00E79 /* GCOrderedSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EDB5D11B84D4C400F00E79 /* GCOrderedSet.m */; };
+		75CA7A821DE1FB6D001D2174 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA7A811DE1FB6D001D2174 /* libcrypto.a */; };
+		75CA7A861DE1FE24001D2174 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA7A851DE1FE24001D2174 /* libcrypto.a */; };
 		E200A3BA1B02DDA100C4E39D /* GCPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = E200A3B81B02DDA100C4E39D /* GCPrivate.m */; };
 		E20EB08C19FC75CA0031A075 /* GCRepository+Reset.m in Sources */ = {isa = PBXBuildFile; fileRef = E20EB08A19FC75CA0031A075 /* GCRepository+Reset.m */; };
 		E20EB09019FC76160031A075 /* GCRepository+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = E20EB08E19FC76160031A075 /* GCRepository+Status.m */; };
@@ -356,7 +358,6 @@
 		E2B9879D1B9172470097629D /* GINode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D4DEA61A4D57AA00B6AF66 /* GINode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2B987A11B9173440097629D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E284D6701AAC004F0038C176 /* CoreGraphics.framework */; };
 		E2B987B41B9206470097629D /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B987B31B9206470097629D /* libcrypto.dylib */; };
-		E2B987B51B9206750097629D /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B987B31B9206470097629D /* libcrypto.dylib */; };
 		E2C338D919F85C3400063D95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C338D819F85C3400063D95 /* Foundation.framework */; };
 		E2C338EC19F85C8600063D95 /* GCBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C338DC19F85C8600063D95 /* GCBranch.m */; };
 		E2C338EE19F85C8600063D95 /* GCCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C338DE19F85C8600063D95 /* GCCommit.m */; };
@@ -420,6 +421,9 @@
 		74EDB5D01B84D4C400F00E79 /* GCOrderedSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCOrderedSet.h; sourceTree = "<group>"; };
 		74EDB5D11B84D4C400F00E79 /* GCOrderedSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCOrderedSet.m; sourceTree = "<group>"; };
 		74EDB5D51B84E06500F00E79 /* GCOrderedSet-Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GCOrderedSet-Tests.m"; sourceTree = "<group>"; };
+		75CA7A7F1DE1F9EF001D2174 /* libcrypto.0.9.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.8.dylib; path = ../../../../usr/lib/libcrypto.0.9.8.dylib; sourceTree = "<group>"; };
+		75CA7A811DE1FB6D001D2174 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "Third-Party/Libraries/libssl/MacOSX/lib/libcrypto.a"; sourceTree = "<group>"; };
+		75CA7A851DE1FE24001D2174 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "Third-Party/Libraries/libssl/iPhoneOS/lib/libcrypto.a"; sourceTree = "<group>"; };
 		E200A3B81B02DDA100C4E39D /* GCPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPrivate.m; sourceTree = "<group>"; };
 		E20EB08919FC75CA0031A075 /* GCRepository+Reset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GCRepository+Reset.h"; sourceTree = "<group>"; };
 		E20EB08A19FC75CA0031A075 /* GCRepository+Reset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GCRepository+Reset.m"; sourceTree = "<group>"; };
@@ -657,6 +661,7 @@
 				E21753F81B916C0C00BE234A /* Security.framework in Frameworks */,
 				E217538F1B9167F500BE234A /* libz.dylib in Frameworks */,
 				E21753901B9167F500BE234A /* libiconv.dylib in Frameworks */,
+				75CA7A861DE1FE24001D2174 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,9 +673,9 @@
 				E267E1FB1B84DA7600BAB377 /* Cocoa.framework in Frameworks */,
 				E267E2301B84DC0900BAB377 /* QuartzCore.framework in Frameworks */,
 				E267E1F91B84DA3F00BAB377 /* Security.framework in Frameworks */,
-				E2B987B51B9206750097629D /* libcrypto.dylib in Frameworks */,
 				E267E1F41B84D95B00BAB377 /* libz.dylib in Frameworks */,
 				E267E1F51B84D95E00BAB377 /* libiconv.dylib in Frameworks */,
+				75CA7A821DE1FB6D001D2174 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +698,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75CA7A7E1DE1F9EF001D2174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75CA7A851DE1FE24001D2174 /* libcrypto.a */,
+				75CA7A811DE1FB6D001D2174 /* libcrypto.a */,
+				75CA7A7F1DE1F9EF001D2174 /* libcrypto.0.9.8.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E20A52341A80D1BF003546C3 /* Framework and Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -888,6 +903,7 @@
 				E20A52341A80D1BF003546C3 /* Framework and Libraries */,
 				E27E374E1B86F5D1000A551A /* Xcode-Configurations */,
 				E2C338AC19F8562F00063D95 /* Products */,
+				75CA7A7E1DE1F9EF001D2174 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -1757,6 +1773,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third-Party/Libraries/libssl/iPhoneOS/lib",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"Third-Party/Libraries/libssl/$(PLATFORM_NAME)/lib/libcrypto.a",
@@ -1778,6 +1798,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third-Party/Libraries/libssl/iPhoneOS/lib",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"Third-Party/Libraries/libssl/$(PLATFORM_NAME)/lib/libcrypto.a",
@@ -1799,6 +1823,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third-Party/Libraries/libssl/iPhoneOS/lib",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"Third-Party/Libraries/libssl/$(PLATFORM_NAME)/lib/libcrypto.a",
@@ -1819,6 +1847,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third-Party/Libraries/libssl/MacOSX/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.gitup.kit;
 				PRODUCT_NAME = GitUpKit;
 				SDKROOT = macosx;
@@ -1835,6 +1867,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third-Party/Libraries/libssl/MacOSX/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.gitup.kit;
 				PRODUCT_NAME = GitUpKit;
 				SDKROOT = macosx;
@@ -1851,6 +1887,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third-Party/Libraries/libssl/MacOSX/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.gitup.kit;
 				PRODUCT_NAME = GitUpKit;
 				SDKROOT = macosx;
@@ -1871,6 +1911,7 @@
 					"Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/lib/libssh2.a",
 					"Third-Party/Libraries/libsqlite3/$(PLATFORM_NAME)/lib/libsqlite3.a",
 				);
+				SDKROOT = macosx10.12;
 			};
 			name = Debug;
 		};
@@ -1887,6 +1928,7 @@
 					"Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/lib/libssh2.a",
 					"Third-Party/Libraries/libsqlite3/$(PLATFORM_NAME)/lib/libsqlite3.a",
 				);
+				SDKROOT = macosx10.12;
 			};
 			name = Release;
 		};
@@ -1943,6 +1985,7 @@
 					"Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/lib/libssh2.a",
 					"Third-Party/Libraries/libsqlite3/$(PLATFORM_NAME)/lib/libsqlite3.a",
 				);
+				SDKROOT = macosx10.12;
 			};
 			name = Distribution;
 		};

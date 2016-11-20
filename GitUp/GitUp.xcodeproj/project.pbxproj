@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		165C32B61B95739700D2F894 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165C32B51B95739700D2F894 /* QuartzCore.framework */; };
+		75CA7A781DE1F536001D2174 /* GitUpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA7A771DE1F536001D2174 /* GitUpKit.framework */; };
+		75CA7A791DE1F549001D2174 /* GitUpKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E28A16E01B87021600218332 /* GitUpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75CA7A841DE1FCBB001D2174 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA7A831DE1FCBB001D2174 /* libcrypto.a */; };
 		E212A6DE1B92100E00F62B18 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E212A6DD1B92100E00F62B18 /* libiconv.dylib */; };
 		E21739F71A5080DD00EC6777 /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E21739F61A5080DD00EC6777 /* DocumentController.m */; };
 		E21DCAEB1B253847006424E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E21DCAEA1B253847006424E8 /* main.m */; };
@@ -16,15 +19,12 @@
 		E21DCAF61B254F33006424E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C338D819F85C3400063D95 /* Foundation.framework */; };
 		E21DCAF71B254F53006424E8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28200AC1A7D71EE00DA4096 /* CoreServices.framework */; };
 		E21DCAF81B255471006424E8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C3394419F85D4B00063D95 /* libz.dylib */; };
-		E222FF7F1B9210F600507E77 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E222FF7E1B9210F600507E77 /* libcrypto.dylib */; };
 		E23C9B291B92104500ACA5A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B14B561A88102C00003E64 /* Security.framework */; };
 		E25EBCEB1AA3F8B700D3AF44 /* Application.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25EBCEA1AA3F8B700D3AF44 /* Application.xcassets */; };
 		E2653D251A5B2FBD006A9871 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2653D241A5B2FBD006A9871 /* Sparkle.framework */; };
 		E267E1F31B84D93300BAB377 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E2653D241A5B2FBD006A9871 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E267E26B1B84E07E00BAB377 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B14B561A88102C00003E64 /* Security.framework */; };
 		E267E2741B84E42A00BAB377 /* Help.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2BDA0671AD47A2F00E69729 /* Help.plist */; };
-		E28A16E51B87023200218332 /* GitUpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28A16E01B87021600218332 /* GitUpKit.framework */; };
-		E28A16E61B87023C00218332 /* GitUpKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E28A16E01B87021600218332 /* GitUpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E2A5BE701A814970008DD47F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2A5BE6E1A814970008DD47F /* Localizable.strings */; };
 		E2C338B219F8562F00063D95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C338B119F8562F00063D95 /* AppDelegate.m */; };
 		E2C338B419F8562F00063D95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C338B319F8562F00063D95 /* main.m */; };
@@ -93,8 +93,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				75CA7A791DE1F549001D2174 /* GitUpKit.framework in Copy Frameworks */,
 				E267E1F31B84D93300BAB377 /* Sparkle.framework in Copy Frameworks */,
-				E28A16E61B87023C00218332 /* GitUpKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +103,10 @@
 
 /* Begin PBXFileReference section */
 		165C32B51B95739700D2F894 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		75CA7A771DE1F536001D2174 /* GitUpKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GitUpKit.framework; path = ../GitUpKit/build/UninstalledProducts/macosx/GitUpKit.framework; sourceTree = "<group>"; };
+		75CA7A7A1DE1F6C7001D2174 /* libk5crypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libk5crypto.tbd; path = usr/lib/libk5crypto.tbd; sourceTree = SDKROOT; };
+		75CA7A7C1DE1F6E7001D2174 /* libcorecrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcorecrypto.tbd; path = usr/lib/system/libcorecrypto.tbd; sourceTree = SDKROOT; };
+		75CA7A831DE1FCBB001D2174 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../GitUpKit/Third-Party/Libraries/libssl/MacOSX/lib/libcrypto.a"; sourceTree = "<group>"; };
 		E212A6DD1B92100E00F62B18 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		E21739F51A5080DD00EC6777 /* DocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
 		E21739F61A5080DD00EC6777 /* DocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
@@ -148,9 +152,9 @@
 				E23C9B291B92104500ACA5A9 /* Security.framework in Frameworks */,
 				E21DCAF71B254F53006424E8 /* CoreServices.framework in Frameworks */,
 				E21DCAF61B254F33006424E8 /* Foundation.framework in Frameworks */,
-				E222FF7F1B9210F600507E77 /* libcrypto.dylib in Frameworks */,
 				E212A6DE1B92100E00F62B18 /* libiconv.dylib in Frameworks */,
 				E21DCAF81B255471006424E8 /* libz.dylib in Frameworks */,
+				75CA7A841DE1FCBB001D2174 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,13 +167,24 @@
 				E267E26B1B84E07E00BAB377 /* Security.framework in Frameworks */,
 				E2653D251A5B2FBD006A9871 /* Sparkle.framework in Frameworks */,
 				E2F6AA0A1A7EED89002DBF56 /* Crashlytics.framework in Frameworks */,
-				E28A16E51B87023200218332 /* GitUpKit.framework in Frameworks */,
+				75CA7A781DE1F536001D2174 /* GitUpKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75CA7A761DE1F532001D2174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75CA7A831DE1FCBB001D2174 /* libcrypto.a */,
+				75CA7A7C1DE1F6E7001D2174 /* libcorecrypto.tbd */,
+				75CA7A7A1DE1F6C7001D2174 /* libk5crypto.tbd */,
+				75CA7A771DE1F536001D2174 /* GitUpKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E20A52341A80D1BF003546C3 /* Framework and Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +243,7 @@
 				E20A52341A80D1BF003546C3 /* Framework and Libraries */,
 				E27E37551B86F670000A551A /* Xcode-Configurations */,
 				E2C338AC19F8562F00063D95 /* Products */,
+				75CA7A761DE1F532001D2174 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -483,6 +499,11 @@
 			buildSettings = {
 				GCC_DYNAMIC_NO_PIC = YES;
 				HEADER_SEARCH_PATHS = "../GitUpKit/Third-Party/libgit2/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)Kit/Third-Party/Libraries/libssl/MacOSX/lib",
+				);
 				OTHER_LDFLAGS = (
 					"$(BUILD_DIR)/$(CONFIGURATION)/libgit2.a",
 					"../GitUpKit/Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/lib/libssh2.a",
@@ -497,6 +518,11 @@
 			buildSettings = {
 				GCC_DYNAMIC_NO_PIC = YES;
 				HEADER_SEARCH_PATHS = "../GitUpKit/Third-Party/libgit2/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)Kit/Third-Party/Libraries/libssl/MacOSX/lib",
+				);
 				OTHER_LDFLAGS = (
 					"$(BUILD_DIR)/$(CONFIGURATION)/libgit2.a",
 					"../GitUpKit/Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/lib/libssh2.a",
@@ -511,6 +537,11 @@
 			buildSettings = {
 				GCC_DYNAMIC_NO_PIC = YES;
 				HEADER_SEARCH_PATHS = "../GitUpKit/Third-Party/libgit2/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)Kit/Third-Party/Libraries/libssl/MacOSX/lib",
+				);
 				OTHER_LDFLAGS = (
 					"$(BUILD_DIR)/$(CONFIGURATION)/libgit2.a",
 					"../GitUpKit/Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/lib/libssh2.a",
@@ -524,7 +555,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E27E37571B86F670000A551A /* Debug.xcconfig */;
 			buildSettings = {
-				SDKROOT = macosx;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx10.12;
 			};
 			name = Debug;
 		};
@@ -532,7 +564,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E27E37591B86F670000A551A /* Release.xcconfig */;
 			buildSettings = {
-				SDKROOT = macosx;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx10.12;
 			};
 			name = Release;
 		};
@@ -544,7 +577,10 @@
 				BUNDLE_VERSION_STRING = 1.0.6;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)Kit/build/UninstalledProducts/macosx",
+				);
 				GCC_DYNAMIC_NO_PIC = YES;
 				INFOPLIST_FILE = Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -563,7 +599,10 @@
 				BUNDLE_VERSION_STRING = 1.0.6;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)Kit/build/UninstalledProducts/macosx",
+				);
 				GCC_DYNAMIC_NO_PIC = YES;
 				INFOPLIST_FILE = Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -578,7 +617,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E27E37581B86F670000A551A /* Distribution.xcconfig */;
 			buildSettings = {
-				SDKROOT = macosx;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx10.12;
 			};
 			name = Distribution;
 		};
@@ -590,7 +630,10 @@
 				BUNDLE_VERSION_STRING = 1.0.6;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)Kit/build/UninstalledProducts/macosx",
+				);
 				GCC_DYNAMIC_NO_PIC = YES;
 				INFOPLIST_FILE = Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
