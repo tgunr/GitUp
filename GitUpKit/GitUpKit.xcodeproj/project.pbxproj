@@ -1268,7 +1268,7 @@
 		E2C338A319F8562F00063D95 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					E217531A1B91613300BE234A = {
@@ -1767,6 +1767,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1792,6 +1793,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1817,6 +1819,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1902,6 +1905,23 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E27E37501B86F5D1000A551A /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"Third-Party/libgit2/include",
 					"Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/include",
@@ -1911,7 +1931,7 @@
 					"Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/lib/libssh2.a",
 					"Third-Party/Libraries/libsqlite3/$(PLATFORM_NAME)/lib/libsqlite3.a",
 				);
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1919,6 +1939,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E27E37521B86F5D1000A551A /* Release.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"Third-Party/libgit2/include",
 					"Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/include",
@@ -1928,7 +1964,7 @@
 					"Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/lib/libssh2.a",
 					"Third-Party/Libraries/libsqlite3/$(PLATFORM_NAME)/lib/libsqlite3.a",
 				);
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1976,6 +2012,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E27E37511B86F5D1000A551A /* Distribution.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"Third-Party/libgit2/include",
 					"Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/include",
@@ -1985,7 +2037,7 @@
 					"Third-Party/Libraries/libssh2/$(PLATFORM_NAME)/lib/libssh2.a",
 					"Third-Party/Libraries/libsqlite3/$(PLATFORM_NAME)/lib/libsqlite3.a",
 				);
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 			};
 			name = Distribution;
 		};
